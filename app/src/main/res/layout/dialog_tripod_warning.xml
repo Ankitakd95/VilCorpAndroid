@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/home_recent_grey"
+    >
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel Order"
+        android:paddingStart="@dimen/dimen_25dp"
+        android:paddingEnd="@dimen/dimen_25dp"
+        android:paddingTop="@dimen/dimen_2dp"
+        android:paddingBottom="@dimen/dimen_2dp"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_cornor_bg"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:backgroundTint="#D32F2F"
+        android:textColor="@color/white" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:endIconMode="dropdown_menu"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxStrokeWidth="0dp"
+        app:boxBackgroundColor="#FFFFFF">
+
+        <AutoCompleteTextView
+            android:id="@+id/spServiceProvider"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:hint="Select Cancel Reason"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- OK Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOk"
+        android:layout_width="160dp"
+        android:layout_height="@dimen/dimen_35dp"
+
+        android:text="Done"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+       android:layout_gravity="center"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="@dimen/dimen_15dp"
+        android:backgroundTint="@color/vil_blue"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:background="@drawable/round_cornor_bg"/>
+
+
+</LinearLayout>

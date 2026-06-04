@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/vil_bg"
+    tools:context=".ui.activity.NotificationActivity">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/dark_grey"
+        android:elevation="@dimen/dimen_10dp"
+        app:titleCentered="true"
+        app:titleTextColor="@color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginEnd="@dimen/dimen_15dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- LEFT SIDE (Filter) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- ALL -->
+            <TextView
+                android:id="@+id/tvAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/vil_red"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- SWITCH -->
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- UNREAD -->
+            <TextView
+                android:id="@+id/tvUnseen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unseen"
+                android:textSize="16sp"
+                android:textColor="@color/dark_grey"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- RIGHT SIDE BUTTON -->
+        <TextView
+            android:id="@+id/tvMarkAllRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark all read"
+            android:textSize="14sp"
+
+            android:backgroundTint="@color/vil_blue"
+            android:background="@drawable/edit_gray_round_corners"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="6dp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/leadRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_notification"
+
+        android:layout_marginTop="@dimen/dimen_10dp"/>
+
+</LinearLayout>

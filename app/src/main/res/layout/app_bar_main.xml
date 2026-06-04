@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.MainActivity">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/menuIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/baseline_menu_24" />
+
+
+            <TextView
+                android:id="@+id/tv_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_Profile"
+                android:layout_toEndOf="@+id/img_Profile"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:text="Ankit Kumar"
+                android:layout_alignTop="@+id/img_Profile"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="@dimen/size_15sp"
+                android:textStyle="bold" />
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_above="@+id/tv_Name"-->
+<!--                android:layout_alignLeft="@+id/tv_Name"-->
+<!--                android:layout_marginBottom="1dp"-->
+<!--                android:text="Hi,"-->
+<!--                android:fontFamily="@font/roboto_medium"-->
+<!--                android:textColor="@color/vil_red"-->
+<!--                android:textSize="13sp" />-->
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_Profile"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_toEndOf="@+id/menuIcon"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+
+                app:shapeAppearanceOverlay="@style/circleImageView"
+
+                app:strokeColor="@color/shapable_image_stroke"
+                app:strokeWidth="@dimen/dimen_1dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:src="@drawable/userdef" />
+
+
+            <ImageView
+                android:id="@+id/notifIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/baseline_notifications_active_24" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/notifCard"
+                android:layout_width="@dimen/dimen_14dp"
+                android:layout_height="@dimen/dimen_14dp"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/dimen_7dp"
+                android:layout_alignTop="@+id/notifIcon"
+                android:layout_alignEnd="@+id/notifIcon"
+
+                android:backgroundTint="@color/red"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/notifCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/dimen_8dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_semibold"
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <include layout="@layout/content_view" />
+
+
+</LinearLayout>

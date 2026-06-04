@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardLv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="6dp"
+    card_view:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="14dp">
+
+        <!-- CLIENT NAME -->
+        <TextView
+            android:id="@+id/tvClientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apollo Pharmacy East Of Kailash"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/vil_blue"/>
+
+        <!-- SEGMENT + CATEGORY -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HQ"
+                android:textStyle="bold"
+                android:textColor="#1976D2"
+                android:background="@drawable/gray_round_corners"
+                android:backgroundTint="#E3F2FD"
+                android:padding="6dp"/>
+
+            <TextView
+                android:id="@+id/tvSegment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CSA"
+                android:layout_marginStart="8dp"
+                android:textStyle="bold"
+                android:textColor="#880E4F"
+
+                android:background="@drawable/gray_round_corners"
+                android:backgroundTint="#FFE6F3"
+                android:padding="6dp"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvStatus"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="RIDER_CANCELLED"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:textColor="@color/vil_red"-->
+<!--                android:background="@drawable/gray_round_corners"-->
+<!--                android:backgroundTint="#FFE4E4"-->
+<!--                android:padding="6dp"/>-->
+        </LinearLayout>
+
+        <!-- DIVIDER -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            android:layout_marginVertical="10dp"/>
+
+        <!-- MANAGER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvManager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manager: Dummy 1"
+                android:textStyle="bold"
+                android:textColor="#424242"/>
+
+            <TextView
+                android:id="@+id/tvManagerPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9234567890"
+                android:textColor="#616161"/>
+
+            <TextView
+                android:id="@+id/tvManagerEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dummy@example.com"
+                android:textColor="#616161"/>
+        </LinearLayout>
+
+        <!-- SPOC -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tvSpoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPOC: Random1"
+                android:textStyle="bold"
+                android:textColor="#424242"/>
+
+            <TextView
+                android:id="@+id/tvSpocPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="987654321"
+                android:textColor="#616161"/>
+        </LinearLayout>
+
+        <!-- STATUS + REASON -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="14dp">
+
+
+
+            <TextView
+                android:id="@+id/tvReason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: Delivered"
+
+                android:background="@drawable/gray_round_corners"
+                android:textColor="#558B2F"
+                android:backgroundTint="#E4FADC"
+                android:padding="6dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+               />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

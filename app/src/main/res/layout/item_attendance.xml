@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/orderList"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="@dimen/dimen_15dp"
+    android:layout_marginRight="@dimen/dimen_15dp"
+    app:cardCornerRadius="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_semibold"
+
+                />
+
+            <TextView
+                android:id="@+id/tvMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_medium"
+
+                />
+            <TextView
+                android:id="@+id/tvYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_medium"
+
+                />
+            <TextView
+                android:id="@+id/tvDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/orange"
+                android:textSize="10dp"
+                android:fontFamily="@font/poppins_medium"
+
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="2dp"
+            android:background="#C3C0C0"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/hdStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="@color/black"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/divider"
+            android:textSize="13sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="17sp"
+            android:fontFamily="@font/poppins_medium"
+
+            />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/green_dark"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/hdStatus"
+            android:textSize="13sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppins_medium"
+
+            />
+
+        <View
+            android:id="@+id/verticalView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toRightOf="@+id/divider"
+            android:layout_above="@+id/hdStatus"
+            android:layout_marginBottom="5dp"
+            android:background="#C3C0C0" />
+
+        <LinearLayout
+            android:id="@+id/punchInLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/divider"
+            android:layout_above="@+id/verticalView"
+            android:gravity="center"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Punch In"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+
+                android:fontFamily="@font/poppins_medium"
+
+                />
+
+            <TextView
+                android:id="@+id/pnchIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/vil_blue"
+                android:textSize="13sp"
+
+                android:fontFamily="@font/poppins_medium"
+
+                />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#C3C0C0"
+            android:layout_toRightOf="@+id/punchInLinear"
+            android:layout_above="@+id/verticalView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/punchOutLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/divider2"
+            android:layout_above="@+id/verticalView"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Punch Out"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+
+                android:fontFamily="@font/poppins_medium"
+
+                />
+
+            <TextView
+                android:id="@+id/pnchOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/orange"
+                android:textSize="13sp"
+
+                android:fontFamily="@font/poppins_medium"
+
+                />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#C3C0C0"
+            android:layout_toRightOf="@+id/punchOutLinear"
+            android:layout_above="@+id/verticalView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/totalHourLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/divider3"
+            android:layout_above="@+id/verticalView"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Hours"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+
+                android:fontFamily="@font/poppins_medium"
+
+                />
+
+            <TextView
+                android:id="@+id/totalHr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="#FFAA00"
+                android:textSize="13sp"
+
+                android:fontFamily="@font/poppins_medium"
+
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "899111862219",
+    "project_id": "vilcorp-44ee0",
+    "storage_bucket": "vilcorp-44ee0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899111862219:android:7c85fc3f6e84adc3c5804e",
+        "android_client_info": {
+          "package_name": "com.softage.net.vilcorp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQpiIj2HE9hd9tdJVpyG4uSwdVGdHU-FE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

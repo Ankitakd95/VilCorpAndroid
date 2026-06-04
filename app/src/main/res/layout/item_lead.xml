@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardLv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="6dp"
+    card_view:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="14dp">
+
+        <!-- Client Name -->
+        <TextView
+            android:id="@+id/tvClientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prasad Koch-Technik Private Limited"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/vil_blue"/>
+
+        <!-- Address -->
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DLF Cyber City, Sector 24"
+            android:textSize="13sp"
+            android:textColor="#757575"
+
+            android:layout_marginTop="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSimCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIM: 10"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/vil_red"
+            android:background="@drawable/gray_round_corners"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textStyle="bold"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:id="@+id/tvNavigate"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="wrap_content"
+                android:text="Navigate"
+                android:textColor="@android:color/white"
+                android:paddingLeft="8dp"
+                android:backgroundTint="@color/vil_green"
+                android:background="@drawable/gray_round_corners"
+                android:paddingRight="8dp"
+                android:gravity="center"
+                android:drawableRight="@drawable/baseline_navigation_24"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:textStyle="bold"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_marginTop="6dp"/>
+
+
+        </LinearLayout>
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Manager Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvManager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manager: Dummy 13"
+                    android:textStyle="bold"
+                    android:textColor="#424242"/>
+
+                <TextView
+                    android:id="@+id/tvManagerPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9234567890"
+
+                    android:textColor="#616161"/>
+            </LinearLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/btnCallManager"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                app:shapeAppearanceOverlay="@style/circleImageView"
+
+                app:strokeColor="#C41A5CA6"
+                app:strokeWidth="@dimen/dimen_1dp"
+                android:padding="@dimen/dimen_3dp"
+                android:background="#C41A5CA6"
+
+                android:scaleType="center"
+                android:src="@drawable/baseline_call_24"
+
+               />
+        </LinearLayout>
+
+        <!-- SPOC Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvSpoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPOC: Random13"
+                    android:textStyle="bold"
+                    android:textColor="#424242"/>
+
+                <TextView
+                    android:id="@+id/tvSpocPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="987654321"
+                    android:textColor="#616161"/>
+            </LinearLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/btnCallSpoc"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                app:shapeAppearanceOverlay="@style/circleImageView"
+
+                app:strokeColor="#C41A5CA6"
+                app:strokeWidth="@dimen/dimen_1dp"
+                android:padding="@dimen/dimen_3dp"
+                android:background="#C41A5CA6"
+
+                android:scaleType="center"
+                android:src="@drawable/baseline_call_24"/>
+        </LinearLayout>
+
+        <!-- Bottom Info Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HQ"
+                android:textStyle="bold"
+                android:textColor="#1976D2"
+                android:backgroundTint="#E3F2FD"
+                android:background="@drawable/gray_round_corners"
+
+                android:padding="6dp"/>
+
+            <TextView
+                android:id="@+id/tvDeliveryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RIDER_ASSIGNED"
+                android:textStyle="bold"
+
+                android:layout_marginStart="8dp"
+                android:textColor="@color/dark_grey"
+
+                android:background="@drawable/gray_round_corners"
+                android:backgroundTint="@color/vil_bg"
+                android:padding="6dp"/>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RIDER_ASSIGNED"
+                android:textStyle="bold"
+
+                android:background="@drawable/gray_round_corners"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/vil_red"
+                android:backgroundTint="#FFE4E4"
+                android:padding="6dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

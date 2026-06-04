@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/vil_bg"
+    tools:context=".ui.fragment.FeedbackFragment">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainLv"
+
+            android:orientation="vertical">
+
+
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Requirement Form *"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:textColor="@color/vil_blue"
+            android:paddingBottom="10dp"/>
+
+        <!-- Header Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="YES"
+                android:textColor="@color/vil_green"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NO"
+                android:textColor="@color/vil_red"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_semibold"/>
+        </LinearLayout>
+
+        <!-- Rows -->
+        <include layout="@layout/item_requirement_row" android:id="@+id/row1"/>
+        <include layout="@layout/item_requirement_row" android:id="@+id/row2"/>
+        <include layout="@layout/item_requirement_row" android:id="@+id/row3"/>
+        <include layout="@layout/item_requirement_row" android:id="@+id/row4"/>
+        <include layout="@layout/item_requirement_row" android:id="@+id/row5"/>
+        <include layout="@layout/item_requirement_row" android:id="@+id/row6"/>
+        <include layout="@layout/item_requirement_row" android:id="@+id/row7"/>
+        <include layout="@layout/item_requirement_row" android:id="@+id/row8"/>
+        <include layout="@layout/item_requirement_row" android:id="@+id/row9"/>
+        <include layout="@layout/item_requirement_row" android:id="@+id/row10"/>
+        <include layout="@layout/item_requirement_row" android:id="@+id/row11"/>
+        <include layout="@layout/item_requirement_row" android:id="@+id/row12"/>
+        <include layout="@layout/item_requirement_row" android:id="@+id/row13"/>
+        <include layout="@layout/item_requirement_row" android:id="@+id/row14"/>
+        <include layout="@layout/item_requirement_row" android:id="@+id/row15"/>
+        <include layout="@layout/item_requirement_row" android:id="@+id/row16"/>
+        <include layout="@layout/item_requirement_row" android:id="@+id/row17"/>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_weight="1"
+                android:text="Clear Form"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/dimen_15dp"
+                android:backgroundTint="@color/vil_red"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_10dp"
+                android:background="@drawable/round_cornor_bg"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDeliver"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_weight="1"
+                android:text="proceed"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="true"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/dimen_15dp"
+                android:backgroundTint="@color/vil_blue"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:background="@drawable/round_cornor_bg"/>
+        </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/vil_blue"
+            android:gravity="center"
+            android:textSize="@dimen/size_16sp"
+            android:visibility="gone"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Submit final meeting image\nto complete the order"/>
+        <LinearLayout
+            android:id="@+id/lvSelfie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:layout_marginTop="@dimen/dimen_50dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCancel2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/dimen_15dp"
+                android:backgroundTint="@color/vil_red"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_10dp"
+                android:background="@drawable/round_cornor_bg"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDeliver2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_weight="1"
+                android:text="Click Selfie"
+
+                android:textColor="#FFFFFF"
+                android:textAllCaps="true"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/dimen_15dp"
+                android:backgroundTint="@color/vil_blue"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:background="@drawable/round_cornor_bg"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

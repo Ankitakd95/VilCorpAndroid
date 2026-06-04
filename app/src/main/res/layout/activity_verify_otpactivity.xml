@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/vil_bg"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify OTP"
+            android:textSize="@dimen/dimen_30sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/vil_blue"
+            android:layout_gravity="center"/>
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the otp sent to your email to verify your identity and continue securely"
+            android:textSize="@dimen/size_14sp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:textColor="@color/dark_grey"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:layout_marginBottom="@dimen/dimen_35dp"/>
+
+        <com.mukesh.mukeshotpview.mukeshOtpView.MukeshOtpView
+            android:id="@+id/customOtpView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:inputType="number"
+            app:itemWidth="@dimen/dimen_45dp"
+            app:itemSpacing="@dimen/dimen_10dp"
+            android:fontFamily="@font/poppins_semibold"
+
+            android:itemBackground="@drawable/gray_round_corners"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:itemHeight="@dimen/dimen_45dp"
+            android:background="@color/white"
+            app:hideLineWhenFilled="false"
+            app:itemCount="4"
+            app:lineColor="@color/vil_red"
+            app:state_filled="true"
+            app:viewType="none"
+            />
+
+
+
+        <!-- Login Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVerify"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:text="Submit OTP"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="@dimen/size_18sp"
+            android:backgroundTint="@color/vil_red"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:background="@drawable/round_cornor_bg"/>
+        <TextView
+            android:id="@+id/tvResendOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend OTP in 02:00"
+            android:textSize="@dimen/size_14sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/dark_grey"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvResendNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend OTP"
+            android:textSize="@dimen/size_14sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/vil_blue"
+           android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

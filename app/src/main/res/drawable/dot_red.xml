@@ -1,0 +1,5 @@
+<!-- res/drawable/dot_red.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/vil_red"/>
+    <corners android:radius="50dp"/>
+</shape>

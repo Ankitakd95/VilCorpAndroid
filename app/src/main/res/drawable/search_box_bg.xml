@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <stroke
+        android:color="@color/otp_box_grey"
+        android:width="@dimen/dimen_1dp"
+        />
+
+    <solid android:color="@color/search_box"/>
+
+    <corners
+        android:radius="@dimen/dimen_10dp"
+        />
+
+</shape>

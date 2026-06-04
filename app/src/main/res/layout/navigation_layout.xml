@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/navigation_list_view">
+
+    <LinearLayout
+        android:id="@+id/linerLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/nav_logo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="@dimen/dimen_45dp"
+
+
+        android:layout_gravity="center"
+
+        android:src="@drawable/logo" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_2dp"
+            android:background="@color/vil_red"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/nav_listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearLayout"
+        android:layout_below="@id/linerLay"
+        android:layout_marginBottom="10dp"
+        android:divider="#40A5A5A6"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:fadeScrollbars="true"
+        android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/vil_red"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/nav_logout"
+            android:layout_width="@dimen/dimen_35dp"
+            android:layout_height="@dimen/dimen_35dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_logout_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:scrollbars="vertical"
+            android:text="LOGOUT"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

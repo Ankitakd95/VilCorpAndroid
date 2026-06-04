@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ACTIVE (ON) -->
+    <item android:state_activated="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFD600"/> <!-- Yellow like camera apps -->
+            <corners android:radius="18dp"/>
+        </shape>
+    </item>
+
+    <!-- DEFAULT (OFF) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/vil_blue"/>
+            <corners android:radius="18dp"/>
+            <stroke
+                android:width="1dp"
+                android:color="#88FFFFFF"/>
+        </shape>
+    </item>
+
+</selector>
